@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: rgba(14, 14, 14, 0.885);
+    color: aliceblue;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
