@@ -1,18 +1,32 @@
-/* eslint-disable react/prop-types */
+import '../styles/Recipe.css';
 
+/* eslint-disable react/prop-types */
 const Recipe = ({ data, onDelete }) => {
   return (
-    <div className="recipe">
-        <h3>{data.title}</h3>
-        <p>{data.description}</p>
-        <ul>
-            {
-                data.steps.map((step, index) => (
-                    <li key={index}>{step}</li>
-                ))
-            }
+    <div className="Recipe">
+      <button onClick={onDelete}>❌</button>
+      <h3 className='title'>{data.title}</h3>
+      <p className='description'>{data.description}</p>
+      <fieldset>
+        <legend>Ingredients</legend>
+        <ul className='ingredients'>
+          {
+            data.ingredients.map((ingredient, index) => (
+              <li key={index}>{ingredient.trim()}</li>
+            ))
+          }
         </ul>
-        <button onClick={onDelete}>Supprimer</button>
+      </fieldset>
+      <fieldset>
+        <legend>Étapes</legend>
+        <ul className='steps'>
+          {
+            data.steps.filter(str => str.trim() != "").map((step, index) => (
+              <li key={index}>{step.trim()}</li>
+            ))
+          }
+        </ul>
+      </fieldset>
     </div>
   )
 }
