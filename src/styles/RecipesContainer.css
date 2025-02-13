@@ -1,0 +1,30 @@
+#recipes-container {
+    position: absolute;
+    max-width: 750px;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#recipes-container a {
+    text-align: left;
+    margin-left: min(100px, 5%);
+    
+    span { margin-right: 3px; }
+}
+
+.recipes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.recipes::after {
+    content: "";
+    width: 300px;
+}

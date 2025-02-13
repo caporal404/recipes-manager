@@ -1,0 +1,54 @@
+#recipes-input {
+    position: absolute;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    max-width: 470px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    input, textarea, button {
+        border: 1px solid rgba(0, 0, 0, .5);
+        outline: 0;
+        border-radius: 3px;
+    }
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.15rem;
+    line-height: 30px;
+    margin: 10px 0;
+}
+
+form input {
+    text-indent: 5px;
+    padding: 10px 0;
+    font-size: 1.03rem;
+}
+
+textarea {
+    padding: 10px 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#recipes-input a {
+    width: 100%;
+    text-align: right;
+    margin-right: min(100px, 5%);
+    span { margin-left: 3px; }
+}
