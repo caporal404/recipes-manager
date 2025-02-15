@@ -1,27 +1,27 @@
 #recipes-container {
     position: absolute;
-    max-width: 750px;
-    opacity: 0;
+    z-index: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-y: hidden;
 }
 
 #recipes-container a {
-    text-align: left;
-    margin-left: min(100px, 5%);
-    
+    left: 5%;
     span { margin-right: 3px; }
 }
 
 .recipes {
-    width: 100%;
+    width: min(100%, 1000px);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
+    padding: max(50px, 5%) 0;
+    overflow-y: scroll;
 }
 
 .recipes::after {

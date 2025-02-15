@@ -27,12 +27,15 @@ const RecipesInputSection = ({ recipes, setRecipes }) => {
         setDescription("");
         setSteps([]);
         setIngredients([]);
+
+        // On affiche les recettes
+        showRecipes();
     };
 
     // Afficher les recettes
     const showRecipes = () => {
-        document.querySelector('#recipes-input').style.opacity = 0;
-        document.querySelector('#recipes-container').style.opacity = 1;
+        document.querySelector('#recipes-input').style.zIndex = 0;
+        document.querySelector('#recipes-container').style.zIndex = 1;
     };
 
     return (
@@ -80,7 +83,7 @@ const RecipesInputSection = ({ recipes, setRecipes }) => {
                 
                 <button onClick={e => { e.preventDefault(); addRecipe(); }}>Ajouter</button>
             </form>
-            <a onClick={(e) => { e.preventDefault(); showRecipes() }}>Recettes<span>&gt;</span></a>
+            <a onClick={e => { e.preventDefault(); showRecipes() }}>Recettes<span>&gt;</span></a>
         </section>
     )
 }

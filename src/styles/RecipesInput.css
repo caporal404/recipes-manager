@@ -1,6 +1,6 @@
 #recipes-input {
     position: absolute;
-    opacity: 1;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,7 +9,7 @@
 
 form {
     max-width: 470px;
-    width: 100%;
+    width: 95%;
     display: flex;
     flex-direction: column;
 
@@ -47,8 +47,6 @@ form button {
 }
 
 #recipes-input a {
-    width: 100%;
-    text-align: right;
-    margin-right: min(100px, 5%);
+    right: 5%;
     span { margin-left: 3px; }
 }

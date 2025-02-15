@@ -11,13 +11,9 @@ const RecipesContainerSection = ({ recipes, setRecipes }) => {
     };
 
     // Afficher le formulaire
-    const showRecipes = () => {
-        document.querySelector('#recipes-container').style.opacity = 0;
-        document.querySelector('#recipes-input').style.opacity = 1;
-        console.log(
-            document.querySelector('#recipes-container').style.opacity,
-            document.querySelector('#recipes-input').style.opacity
-        );
+    const hideRecipes = () => {
+        document.querySelector('#recipes-container').style.zIndex = 0;
+        document.querySelector('#recipes-input').style.zIndex = 1;
     }
 
     return (
@@ -29,7 +25,7 @@ const RecipesContainerSection = ({ recipes, setRecipes }) => {
                 ))
             }
             </div>
-            <a onClick={(e) => { e.preventDefault(); showRecipes(); }}><span>&lt;</span>Acceuil</a>
+            <a onClick={(e) => { e.preventDefault(); hideRecipes(); }}><span>&lt;</span>Acceuil</a>
         </section>
     )
 }
