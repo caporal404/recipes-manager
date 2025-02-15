@@ -18,6 +18,7 @@ const RecipesContainerSection = ({ recipes, setRecipes }) => {
 
     return (
         <section id="recipes-container">
+            <h2>Mes recettes</h2>
             <div className="recipes">
             {
                 recipes.map((recipe, index) => (
