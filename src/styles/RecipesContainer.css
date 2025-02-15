@@ -10,6 +10,8 @@
 
 #recipes-container a {
     left: 5%;
+    background-color: var(--bg-color);
+    padding: 5px 10px 5px 0;
     span { margin-right: 3px; }
 }
 
