@@ -10,19 +10,20 @@ Une application web permettant de créer et de gérer des recettes de cuisine
 ## Installation 
 
 1. Cloner le dépôt:
----
+-
 ```git clone https://github.com/caporal404/recipes-manager.git```
 
 2. Accéder au dossier du projet:
----
+-
 ```cd recipes-manager```
 
 3. Installer les dépendances:
----
+-
 ```npm install```
 
 4. Lancer l'application:
----```npm run dev```
+---
+```npm run dev```
 
 ## Utilisation 
 
