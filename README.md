@@ -1,8 +1,23 @@
-# React + Vite
+## Gestionnaire de recettes 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description 
+Il s'agit d'une application React permettant de gérer des recettes de cuisine
 
-Currently, two official plugins are available:
+Elle permet les opérations suivantes :
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ___Ajout d'une recette___ 
+- ___Suppression d'une recette___ 
+
+## Installation 
+1. Cloner le dépôt:
+```git clone https://github.com/caporal404/recipes-manager.git```
+2. Accéder au dossier du projet:
+```cd recipes-manager```
+2. Installer les dépendances:
+```npm install```
+3. Lancer l'application:
+```npm run dev```
+
+## Technologies utilisées:
+* React + Vite
+
